@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal information</title>
+    <link rel="stylesheet" href="css/PersonalInformation.css">
+</head>
+<body>
+<script>
+    function changePassword() {
+        event.preventDefault();
+        window.location.href = "ChangePassword.html";
+    }
+
+    function editPersonalInformation() {
+        event.preventDefault();
+        alert("Chỉnh sửa thành công")
+    }
+
+    function menuSystem(){
+        event.preventDefault();
+        window.location.href = "MenuSystem.html"
+    }
+</script>
+
+<fieldset>
+    <legend>Thông tin cá nhân</legend>
+    <table>
+        <tr>
+            <th></th>
+            <th>Thông tin cá nhân</th>
+        </tr>
+
+        <tr>
+            <td>Tài khoản:</td>
+            <td>TanPN</td>
+        </tr>
+
+        <tr>
+            <td>Mật khẩu:</td>
+            <td>
+                <form>
+                    <table>
+                        <tr>
+                            <td><input type="password" placeholder="******"></td>
+                            <td><button onclick="changePassword()">Đổi mật khẩu</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Họ tên:</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Ngày sinh:</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Giới tính:</td>
+            <td>
+                <input type="radio" id="nam" name="gioitinh" value="nam">
+                <label for="nam">Nam</label>
+
+                <input type="radio" id="nu" name="gioitinh" value="nu">
+                <label for="nu">Nữ</label>
+
+                <input type="radio" id="chua" name="gioitinh" value="chua">
+                <label for="chua">Chưa xác định</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Địa chỉ:</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Điện thoại:</td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <td>Email:</td>
+            <td><input type="email"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <form>
+                    <table>
+                        <tr>
+                            <td><button onclick="editPersonalInformation()">Chỉnh sửa</button></td>
+                            <td><button onclick="menuSystem()">Hủy</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+</fieldset>
+
+</body>
+</html>

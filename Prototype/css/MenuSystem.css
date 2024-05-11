@@ -1,5 +1,31 @@
+body {
+    display: grid;
+    place-items: center; /* Căn phần tử theo cả chiều ngang và chiều dọc */
+    height: 100vh;
+}
 fieldset {
     font-size: xx-large;
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    display: grid;
+    place-items: center; /* Căn phần tử theo cả chiều ngang và chiều dọc */
+    height: 45%;
+}
+
+th{
+    margin-right: 60px; /* Tạo khoảng cách bên phải của thẻ */
+    margin-left: 60px; /* Tạo khoảng cách bên trái của thẻ */
+    padding-right: 30px; /* Tạo khoảng cách bên phải của thẻ */
+    padding-left: 30px; /* Tạo khoảng cách bên trái của thẻ */
+}
+
+td {
+    margin-right: 60px; /* Tạo khoảng cách bên phải của thẻ */
+    margin-left: 60px; /* Tạo khoảng cách bên trái của thẻ */
+    padding-right: 30px; /* Tạo khoảng cách bên phải của thẻ */
+    padding-left: 30px; /* Tạo khoảng cách bên trái của thẻ */
+}
+
+.larger-icon {
+    font-size: 160px; /* Kích thước mới của biểu tượng */
+
 }

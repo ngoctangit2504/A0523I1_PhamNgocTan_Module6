@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu System</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     <link rel="stylesheet" href="css/MenuSystem.css">
 </head>
 <body>
+<script>
+    function personalInformation() {
+        event.preventDefault();
+        window.location.href ="PersonalInformation.html"
+    }
+</script>
+
 <fieldset>
     <legend>Đăng nhập thành công</legend>
     <table>
         <tr>
-            <th><i class="fas fa-book"></i></th>
-            <th></th>
+            <th><i class="fas fa-box larger-icon"></i></th>
+            <th><i class="fas fa-book larger-icon"></i></th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td><button>Vào hệ thống</button></td>
+            <td><button onclick="personalInformation()">Thông tin cá nhân</button></td>
         </tr>
     </table>
 </fieldset>
